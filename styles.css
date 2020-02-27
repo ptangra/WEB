@@ -1,0 +1,68 @@
+body{
+    width: 100%;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: blueviolet;
+    background-image: url('forest1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 auto;
+}
+h1{
+    color: cyan;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 120px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    /*border: 1px solid powderblue;*/
+ 
+}
+
+p{
+    font-size: 40px;
+    text-align: center;
+    color:cyan;
+    width: 50%;
+    margin: 0 auto;
+}
+
+section{
+    position: relative;
+    color:black;
+    width: 50%;
+    top: 380px;
+    height: 100px;
+    margin-left: 25%;
+    border: none;
+    text-align: center;
+
+}
+ nav{
+     width: 10%;
+     margin-top: 250px;
+     border: none;
+ }
+ #button1{
+     color: brown;
+     background-color: none;
+     position: relative;
+     height: 80px;
+     width: 300px;
+     left: 780px;
+     top: 250px;
+     border: 0px solid grey;
+     font-size: 14px;
+     font-weight: 700;
+     border-radius: 20px;
+     transition-duration: 0.4s;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+ }
+ #button1:hover{
+     background-color: brown;
+     color: white;
+     box-shadow: 0 50px 80px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+
