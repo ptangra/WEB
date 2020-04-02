@@ -28,6 +28,11 @@
             color: red;
             animation: 2s ease-in-out infinite textZoomInOut;
         }
+		
+		.loader:after{
+			content: ' .';
+			animation: dots 1s steps(5, end) infinite;
+		}
 
         .loader_round {
             width: 5px;
@@ -203,11 +208,32 @@
                 font-size: 8px;
             }
         }
+		@keyframes dots{
+		0%, 20% {
+		color: red;
+    text-shadow:
+      .25em 0 0 red,
+      .5em 0 0 red;}
+  40% {
+    color: #F9FAF7;
+    text-shadow:
+      .25em 0 0 red,
+      .5em 0 0 red;}
+  60% {
+    text-shadow:
+      .25em 0 0 #F9FAF7,
+      .5em 0 0 red;}
+  80%, 100% {
+    text-shadow:
+      .25em 0 0 #F9FAF7,
+      .5em 0 0 #F9FAF7;}
+		}
+		
     </style>
 </head>
 <body>
 <div class="loader">
-    <span class="loader_text">LOADING..</span>
+    <span class="loader_text">LOADING</span>
     <div class="loader_round round1"></div>
     <div class="loader_round round2"></div>
     <div class="loader_round round3"></div>
